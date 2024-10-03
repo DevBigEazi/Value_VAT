@@ -11,20 +11,20 @@ contract Number {
         return VAT;
     }
 
-    function addAmount(uint256 _num) public returns (bool) {
+    function addAmount(uint256 _num, address _addr) public returns (bool) {
         require(_num > VAT, "Not enough");
 
         uint res = _num - VAT;
 
-        vatPayment[msg.sender]+= VAT;
+        vatPayment[_addr]+= VAT;
 
-        acct[msg.sender] += res;
+        acct[_addr] += res;
 
         return true;
     }
 
-    function getUserBalance() public view returns (uint256) {
-        return acct[msg.sender];
+    function getUserBalance(address _addr) public view returns (uint256) {
+        return acct[_addr];
     }
 
 }

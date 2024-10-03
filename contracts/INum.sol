@@ -3,8 +3,8 @@ pragma solidity ^0.8.24;
 
 interface INumber {
     function getVATvalue() external view returns (uint256);
-    function addValue() external returns (bool);
-    function getUserBalance() external view returns (uint256);
+    function addValue(uint, address) external returns (bool);
+    function getUserBalance(address) external view returns (uint256);
 }
 
 contract Interaction {
@@ -18,11 +18,11 @@ contract Interaction {
         return INumber(numberContractAdress).getVATvalue();
     }
 
-    function fund() public returns (bool) {
-        return INumber(numberContractAdress).addValue();
+    function fund(uint _amount, address _addr) public returns (bool) {
+        return INumber(numberContractAdress).addValue(_amount, _addr);
     }
 
-    function userBalance() public view returns (uint256) {
-        return INumber(numberContractAdress).getUserBalance();
+    function userBalance(address _addr) public view returns (uint256) {
+        return INumber(numberContractAdress).getUserBalance(_addr);
     }
 }
