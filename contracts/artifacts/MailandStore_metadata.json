@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "locationPrices",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Classwork.sol": "MailandStore"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Classwork.sol": {
+			"keccak256": "0xca3a8b8a27d10801dfda326e895e0d29cdeedbe8ab7dab9ef29ffc91cafe742e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c0196869c1ca7337de467bac4fa621985dd392cd3fea3bcec4e4edfe013b5772",
+				"dweb:/ipfs/QmeDSGWbYNdvwm3ZozUmvzA644wdQSLXJ4VuWfQuJJgGJ7"
+			]
+		}
+	},
+	"version": 1
+}
